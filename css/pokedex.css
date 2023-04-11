@@ -1,0 +1,127 @@
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 380px){
+    .list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px){
+    .list{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .list{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.normal {
+    background-color: #A8A878; }
+.fire {
+    background-color: #F08030; }
+.water {
+    background-color: #6890F0; }
+.grass {
+    background-color: #78C850; }
+.electric {
+    background-color: #F8D030; }
+.ice {
+    background-color: #98D8D8; }
+.ground {
+    background-color: #E0C068; }
+.flying {
+    background-color: #A890F0; }
+.poison {
+    background-color: #A040A0; }
+.fighting {
+    background-color: #C03028; }
+.psychic {
+    background-color: #F85888; }
+.dark {
+    background-color: #705848; }
+.rock {
+    background-color: #B8A038; }
+.bug {
+    background-color: #A8B820; }
+.ghost {
+    background-color: #705898; }
+.steel {
+    background-color: #B8B8D0; }
+.dragon {
+    background-color: #7038F8; }
+.fairy {
+    background-color: #FFAEC9; }
+
+.pokemon{
+    margin: 0.5rem;
+    padding: 1rem 1rem;
+    color: var(--branco);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    margin-bottom: 0.25rem;
+    text-transform: capitalize;
+}
+
+.pokemon .detail img{
+    max-width: 80%;
+    max-height: 100px;
+    align-self: flex-end;
+}
+
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.number{
+    color: rgba(0, 0, 0, 0.3);
+    text-align: right;
+    font-size: 0.625rem;
+}
+
+.types{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.type{
+    padding: 0.25rem 0.5rem;
+    font-size: 0.625rem;
+    margin: 0.25rem 0;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#loadMore{
+    background-color: #6c79db;
+    border: none;
+    border-radius: 100%;
+    color: var(--branco);
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+}

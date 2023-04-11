@@ -1,0 +1,9 @@
+.details{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro{
+    height: 50%;
+}
